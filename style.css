@@ -1,0 +1,18 @@
+:root {
+    --main-bg-color: #222222;
+    --main-fg-color: #202020;
+    --main-color: #db8300;
+    --main-text-color: #fff;
+    --border-radius: 5px;
+  }
+  
+  {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  }
+  
+  body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+  }
