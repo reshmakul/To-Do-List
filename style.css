@@ -13,6 +13,53 @@
   }
   
   body {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-text-color);
     color: var(--main-text-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1400px;
+    height: 800px;
+  }
+
+  .profile{
+    background-color: #cfb9b9;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    height: 90%;
+    margin-right: 2em;
+  }
+
+  .todo{
+    background-color: #B4C1DA;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    height: 90%;
+    margin-right: 2em;
+  }
+
+  .done{
+    background-color: #B5E5BF;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 90%;
+  }
+
+h3 {
+  }
+
+  h5{
+    color: #222222;
   }
