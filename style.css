@@ -1,28 +1,29 @@
 :root {
-    --main-bg-color: #222222;
+    --main-bg-color: white;
     --main-fg-color: #202020;
     --main-color: #db8300;
-    --main-text-color: #fff;
+    --main-text-color: black;
     --border-radius: 5px;
   }
   
-  {
+  * {
   box-sizing: border-box;
   margin: 0;
   border: 0;
   }
   
-  body {
-    background-color: var(--main-text-color);
+body {
+    background-color: var(--main-bg-color);
     color: var(--main-text-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 1400px;
     height: 800px;
+    margin: 2em;
   }
 
-  .profile{
+  #task {
     background-color: #cfb9b9;
     color: var(--main-text-color);
     display: flex;
@@ -31,10 +32,39 @@
     align-items: center;
     width: 30%;
     height: 90%;
-    margin-right: 2em;
   }
 
-  .todo{
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 1em;
+    height: 30%;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 3rem;
+    line-height: 2.7rem;
+    width: 100%;
+    height: 60%;
+  }
+
+  #form button {
+  width: 5em;
+  height: 2em;
+  color: black;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid black;
+  }
+  
+  .todo {
     background-color: #B4C1DA;
     color: var(--main-text-color);
     display: flex;
@@ -43,7 +73,7 @@
     align-items: center;
     width: 25%;
     height: 90%;
-    margin-right: 2em;
+    margin: 2em;
   }
 
   .done{
@@ -55,11 +85,20 @@
     align-items: center;
     width: 25%;
     height: 90%;
+    margin: 2em;
   }
 
-h3 {
-  }
-
-  h5{
-    color: #222222;
-  }
+.first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 10%;
+}
+.c_second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
